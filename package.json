@@ -1,0 +1,17 @@
+{
+  "name": "axiom-math-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "check": "node scripts/check-boundaries.mjs && node --test tests/*.test.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "axiom-platform": "https://codeload.github.com/Krozzeo/AxiomPlatform/tar.gz/099d0d4c6098f434428793ebbe38d696e61f55c9"
+  }
+}
