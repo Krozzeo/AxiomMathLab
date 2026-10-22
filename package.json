@@ -12,6 +12,6 @@
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
-    "axiom-platform": "https://codeload.github.com/Krozzeo/AxiomPlatform/tar.gz/f1ec64432e3411a206b6643258d6b1c224d00571"
+    "axiom-platform": "https://codeload.github.com/Krozzeo/AxiomPlatform/tar.gz/f2131275ffed2d132383322959631484e8fc8ad5"
   }
 }
