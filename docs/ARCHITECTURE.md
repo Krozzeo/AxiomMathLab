@@ -1,0 +1,13 @@
+# Architecture and native format
+
+The independently versioned adapter negotiates Platform API 0.1 / IPC1. Native product identity is `axiom.math-lab`; format `axiom.math-document` version1; filename `project.axiommath.json`. The document carries a `math-project://UUID` identity, name, monotonic revision, bounded cells and project settings/model. The native document never contains account keys.
+
+Platform's authenticated loopback shell owns the editor tab and its live lease. The adapter owns an exclusive canonical folder lease, validates document compatibility before writes and exposes create/detect/open/status/save/rename/close/import. A closed session terminates its HTTP server; the shell blocks input and reloads a new product session when opened again. Standalone server framing is denied; hosted framing trusts only the explicitly negotiated loopback Platform origin.
+
+The Pratt parser accepts finite real numbers, sequential variables, arithmetic `+ - * / ^`, parentheses, constants pi/e, sin/cos/tan/sqrt/abs/log/exp/min/max. Exponentiation associates right; exponentiation precedes unary minus. Limits:128 cells,2048 expression characters,64 parser nesting,1024 parsed nodes,16 function arguments. Invalid user calculations show a cell error and can be saved for correction. AI proposals must calculate without errors. There is no eval, dynamic import or external process operation in the calculation language.
+
+AI makes one bounded stateless Responses request through the shared public SDK. At most4096 output tokens and120 seconds locally, further restricted by host transport settings. It returns structured proposed cells; this validated domain operation never writes MAIN. Review binds proposal content and base document hashes/revision. Human Apply rechecks those hashes and the on-disk saved document, validates all cells and atomically persists before changing MAIN. Failed persistence retains MAIN/proposal; successful Apply has a bounded in-memory idempotency receipt. Cancellation discards late results. Restart retains the saved document, not pending proposals/task histories.
+
+Imports preserve originals, copy only the selected native document, normalize its filename, reject linked/special/oversized files and retain identity. Duplicate identities are handled by the host catalog. Export uses the shared native Save dialog with overwrite confirmation. No game export is implied.
+
+Monotonic editor buffer reports make uncommitted fields visible to Platform. Host Save/Save-and-close and proposal generation/application reject pending fields; explicit Discard-and-close can discard them. Stale reports cannot clear newer edits.

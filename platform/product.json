@@ -1,0 +1,30 @@
+{
+  "manifestVersion": 1,
+  "productId": "axiom.math-lab",
+  "displayName": "Axiom Math Lab",
+  "productVersion": "0.1.1",
+  "protocolVersion": 1,
+  "platformApiRange": ">=0.1.0 <0.2.0",
+  "capabilities": [
+    "project.detect",
+    "project.create",
+    "project.open",
+    "project.status",
+    "project.save",
+    "project.close",
+    "project.rename",
+    "project.import"
+  ],
+  "projectFormats": [
+    {
+      "id": "axiom.math-document",
+      "versions": [
+        1
+      ]
+    }
+  ],
+  "launch": {
+    "adapter": "official-local",
+    "entry": "adapter.mjs"
+  }
+}
