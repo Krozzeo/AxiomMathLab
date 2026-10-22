@@ -11,3 +11,5 @@
 9. Close the session, click its Delete icon and inspect the reviewed folder. Cancel retains files; Confirm moves them to the Recycle Bin. Remove from list only forgets the catalog entry.
 
 The automated P5 browser test uses a controlled provider and verifies both real products together; it does not establish real-model quality or GPU performance. Test real accounts and native interactive Open/Save dialogs separately. The proof of concept does not implement symbolic math, matrices or plots.
+
+MVP update: the project can inherit the Platform model/reasoning defaults or override them independently. Test project model performs a separate bounded generation test. Connecting the account uses a fixed small probe and never changes your model preferences.

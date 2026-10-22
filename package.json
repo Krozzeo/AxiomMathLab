@@ -1,6 +1,6 @@
 {
   "name": "axiom-math-lab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "license": "MIT",
@@ -12,6 +12,6 @@
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
-    "axiom-platform": "https://codeload.github.com/Krozzeo/AxiomPlatform/tar.gz/099d0d4c6098f434428793ebbe38d696e61f55c9"
+    "axiom-platform": "https://codeload.github.com/Krozzeo/AxiomPlatform/tar.gz/f1ec64432e3411a206b6643258d6b1c224d00571"
   }
 }
