@@ -17,3 +17,5 @@ Source checks: `npm ci` then `npm run check` (Node 24+). The dependency is a pub
 Model and Reasoning Effort are independent of connecting the shared account. Empty project model settings inherit Platform defaults; explicit overrides persist in the native document. Test project model verifies that exact selection without editing calculations.
 
 Prepared Windows releases follow the shared Platform schema1 manifest: package/descriptor version, compatible platform/API, ZIP bytes and SHA256. Stable version tags run checks and publish prepared dependencies plus axiom-release.json; source-only archives are not installations. Project format remains1.
+
+Version0.1.2 pins the shared Platform0.1.7 provider contract; account readiness follows the Hub verification state and compatible reasoning inherits independently of a project model override. The native calculation format remains1.
