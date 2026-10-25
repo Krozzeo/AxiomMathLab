@@ -1,4 +1,4 @@
-Model/reasoning changes capture the input values before entering the async UI queue, so polling or a preceding model test cannot replace a requested override with an old DOM value. The joint browser regression preserves the explicit model across save/close/reopen.
+Model/reasoning changes capture the input values before entering the async UI queue, so polling or a preceding model test cannot replace a requested override with an old DOM value. Pending model input is retained across polls, and older document revisions are not adopted over newer views. The joint browser regression preserves the explicit model across save/close/reopen.
 
 ## Current shared-provider integration (0.1.3)
 
