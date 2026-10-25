@@ -1,3 +1,5 @@
+Current integration review: **0.1.3**, using the public Platform0.1.9 SDK for provider/local model IDs with slashes. Native calculation format1 and review/Apply contracts are unchanged.
+
 # Axiom Math Lab
 
 A minimal local calculation notebook and independently versioned second consumer of [Axiom Platform](https://github.com/Krozzeo/AxiomPlatform). Version 0.1.1 is the reference product for the Platform MVP, not a full mathematical suite.
@@ -19,3 +21,6 @@ Model and Reasoning Effort are independent of connecting the shared account. Emp
 Prepared Windows releases follow the shared Platform schema1 manifest: package/descriptor version, compatible platform/API, ZIP bytes and SHA256. Stable version tags run checks and publish prepared dependencies plus axiom-release.json; source-only archives are not installations. Project format remains1.
 
 Version0.1.2 pins the shared Platform0.1.7 provider contract; account readiness follows the Hub verification state and compatible reasoning inherits independently of a project model override. The native calculation format remains1.
+
+
+Prepared publication supports exact-commit Experimental builds from accepted same-repository PR CI, independently of main approval. Platform0.1.8 installs them side by side and retains the selected stable version until explicit activation. The candidate builder has read-only permissions; a separate pinned publisher validates provenance and hashes. Stable main publication and experimental prereleases are distinct, immutable channels. Native format1 and the bounded Math Lab product scope are unchanged.
