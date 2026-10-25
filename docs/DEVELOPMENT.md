@@ -1,3 +1,7 @@
+## Current shared-provider integration (0.1.3)
+
+The dependency pins public Platform0.1.9 commit d9561e94d7285d30d8e056f7e58b21f1ec163180 with lockfile integrity. Provider/local model IDs may include slashes. Accounts remain host-owned, while native format1, per-project model/reasoning and reviewed proposals remain unchanged. Local evaluator and seven domain tests pass; joint host tests exercise inherited slash-containing local IDs and model tests. No paid-provider quality or new mathematical domain scope is claimed.
+
 # Development and acceptance
 
 Node24+. Run `npm ci` and `npm run check`. The boundary check rejects imports from Game Engine; domain tests cover arithmetic/security limits, native save/reopen/external revisions, isolated reviewed human Apply, write rollback, cancellation and changed review receipts. Joint host/browser acceptance lives in Platform `tests/p5.test.mjs` and `tests/browser-p5.mjs` with AXIOM_ENGINE_PATH and AXIOM_MATH_PATH set.

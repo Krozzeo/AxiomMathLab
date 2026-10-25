@@ -1,3 +1,5 @@
+Current integration review: **0.1.3**, using the public Platform0.1.9 SDK for provider/local model IDs with slashes. Native calculation format1 and review/Apply contracts are unchanged.
+
 # Axiom Math Lab
 
 A minimal local calculation notebook and independently versioned second consumer of [Axiom Platform](https://github.com/Krozzeo/AxiomPlatform). Version 0.1.1 is the reference product for the Platform MVP, not a full mathematical suite.
