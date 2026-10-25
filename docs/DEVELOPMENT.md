@@ -1,3 +1,5 @@
+Model/reasoning changes capture the input values before entering the async UI queue, so polling or a preceding model test cannot replace a requested override with an old DOM value. The joint browser regression preserves the explicit model across save/close/reopen.
+
 ## Current shared-provider integration (0.1.3)
 
 The dependency pins public Platform0.1.9 commit d9561e94d7285d30d8e056f7e58b21f1ec163180 with lockfile integrity. Provider/local model IDs may include slashes. Accounts remain host-owned, while native format1, per-project model/reasoning and reviewed proposals remain unchanged. Local evaluator and seven domain tests pass; joint host tests exercise inherited slash-containing local IDs and model tests. No paid-provider quality or new mathematical domain scope is claimed.
